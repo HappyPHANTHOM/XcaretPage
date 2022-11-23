@@ -23,7 +23,10 @@ const Confirmation = () => {
                             
                             <div className="container px-96 pt-3 py-3">
                                 <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                                    <img className="w-full" src="https://cdn-3.expansion.mx/be/96/0407b0894af48a2583f8cffe67fa/mg-8114.jpg" alt=""/>
+                                    <picture>
+                                        <source srcSet="https://cdn-3.expansion.mx/be/96/0407b0894af48a2583f8cffe67fa/mg-8114.jpg" type="image/webp" />
+                                        <img  className="w-full" src="https://cdn-3.expansion.mx/be/96/0407b0894af48a2583f8cffe67fa/mg-8114.jpg" alt="Sunset in the mountains"/>    
+                                    </picture>
                                     <div className="px-6 py-4">
                                         <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                                         <p className="text-gray-700 text-base">
@@ -53,7 +56,10 @@ const Confirmation = () => {
                             
                             <div className="container px-10 pt-3 py-3">
                                 <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                                    <img className="w-full" src="https://cdn-3.expansion.mx/be/96/0407b0894af48a2583f8cffe67fa/mg-8114.jpg" alt=""/>
+                                    <picture>
+                                        <source srcSet="https://cdn-3.expansion.mx/be/96/0407b0894af48a2583f8cffe67fa/mg-8114.jpg" type="image/webp" />
+                                        <img  className="w-full" src="https://cdn-3.expansion.mx/be/96/0407b0894af48a2583f8cffe67fa/mg-8114.jpg" alt="Sunset in the mountains"/>    
+                                    </picture>
                                     <div className="px-6 py-4">
                                         <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                                         <p className="text-gray-700 text-base">

@@ -18,7 +18,6 @@ const Slider = ({imgArr}) => {
   const slideRef = useRef();
 
   const removeAnimation = () => {
-    // slideRef.current.classList.remove("fade-anim");
   };
 
   useEffect(() => {
@@ -30,7 +29,6 @@ const Slider = ({imgArr}) => {
     return () => {
       pauseSlider();
     };
-    // eslint-disable-next-line
   }, []);
 
   const startSlider = () => {
@@ -46,13 +44,11 @@ const Slider = ({imgArr}) => {
   const handleOnNextClick = () => {
     count = (count + 1) % imgArr2.length;
     setCurrentIndex(count);
-    // slideRef.current.classList.add("fade-anim");
   };
   const handleOnPrevClick = () => {
     const productsLength = imgArr2.length;
     count = (currentIndex + productsLength - 1) % productsLength;
     setCurrentIndex(count);
-    // slideRef.current.classList.add("fade-anim");
   };
 
   return (

@@ -4,13 +4,9 @@ import { AiFillFire } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { modalControl, randomNumber } from '../slices/textSlice';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-// import Image from "next/image";
-// import Trophy from "../public/trophy.png";
-// import Gift from "../public/gift.png";
 
 const Modal = ({text}) => {
-  // const [showModal, setShowModal] = useState(false);
-  // const [showSecondModal, setShowSecondModal] = useState(useSelector((state) => state.textData.modal));
+
   const setModal = useSelector((state) => state.textData.modal)
   const dispatch = useDispatch()
 
@@ -29,16 +25,7 @@ const Modal = ({text}) => {
       isBrowser ? (
         <div className="flex md:flex-col justify-center items-center mt-40">
       {setModal===false ? (
-      //    <div className="flex gap-5 ">
-      //    <button
-      //      className="border border-blue-100  text-gray-800 hover:text-white active:bg-black hover:bg-black flex justify-center items-center gap-2
-      //      font-bold px-6 h-12 rounded-md hover:shadow-lg outline-none focus:outline-none"
-      //      type="button"
-      //      onClick={() => dispatch(modalControl(true))}
-      //    >
-      //      Open Second Modal <AiFillFire className="text-xl" />
-      //    </button>
-      //  </div>
+
         <div className='p-16'>
           <button onClick={() => dispatch(modalControl(true))} className='border border-black rounded text-center w-72 p-5 text-xl'>
             {text?.buttonBook.text}

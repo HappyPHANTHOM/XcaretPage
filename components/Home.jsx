@@ -16,27 +16,11 @@ const Home = () => {
 
     useEffect( () => {
        dispatch(getData())
-    //    validate()
     },[dispatch])
-
-    // const [changeText,setChangeText] = useState('false')
-    // const [data, setData] = useState(useSelector((state) => state.textData.text))
-   
-
-    // function handleClick(){
-    //     console.log(boolean);
-    //     if(boolean==='true'){
-    //     dispatch(changeTxt('false'))
-    //     }
-    //     dispatch(changeTxt('true'))
-    // }
 
     const boolean = useSelector((state) => state.textData.changeText)
     const data = useSelector((state) => state.textData.text)
     const setModal = useSelector((state) => state.textData.modal)
-    // console.log(boolean);
-    // const {es} = aber;
-    // const {es} = data; 1554340027
 
     function validate(boolean){
         if(boolean==='true'){
